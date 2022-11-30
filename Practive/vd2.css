@@ -1,0 +1,14 @@
+.column__left {
+    flex: 0.5;
+    left: 50%;
+    background-color: red;
+    color: blue;
+    text-align: left;
+}
+.column__middle {
+    flex: 0.5;
+    left: 50%;
+    background-color: blue;
+    color: red;
+    text-align: right;
+}

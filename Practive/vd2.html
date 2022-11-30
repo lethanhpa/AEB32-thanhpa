@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .column__left {
+            flex: 0.5;
+            left: 50%;
+            background-color: red;
+            color: blue;
+            text-align: left;
+        }
+        .column__middle {
+            flex: 0.5;
+            left: 50%;
+            background-color: blue;
+            color: red;
+            text-align: right;
+        }
+    </style>
+    <link rel="stylesheet" href="./vd2.css">
+</head>
+<body style="margin: 0; padding: 0;">
+    <div class="div__parrent" id="color__blue" style="display: flex;">
+        <div class="column column__left" style="flex: 0.5; left: 50%; background-color: blue; color: red; text-align: left;">Left</div>
+        <div class="column column__middle" style="flex: 0.5; left: 50%; background-color: red; color: blue; text-align: right;">Content</div>
+    </div>
+</body>
+</html>
