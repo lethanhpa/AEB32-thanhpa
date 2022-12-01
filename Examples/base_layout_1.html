@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .container {
+        height: 800px;
+        text-align: center;
+        margin-left: 20%;
+        margin-right: 20%;
+        padding-bottom: 5%;
+      }
+      .content {
+        height: 67%;
+        display: flex;
+        margin-top: 3px;
+      }
+      .content .content-left {
+        width: 60%;
+      }
+      header {
+        border: 1px solid #333;
+        height: 11%;
+        position: relative;
+      }
+      nav {
+        border: 1px solid #333;
+        height: 11%;
+        margin-top: 3px;
+        position: relative;
+      }
+      .content .content-left section {
+        border: 1px solid #333;
+        height: 50%;
+        margin-right: 3px;
+        position: relative;
+      }
+      .content .content-left article {
+        border: 1px solid #333;
+        height: 50%;
+        margin-right: 3px;
+        margin-top: 3px;
+        position: relative;
+      }
+      .content .content-right {
+        width: 40%;
+        border: 1px solid #333;
+        height: 100.6%;
+        position: relative;
+      }
+      footer {
+        border: 1px solid #333;
+        margin-top: 5px;
+        height: 11%;
+        position: relative;
+      }
+      p {
+        position: absolute;
+        top: 50%;
+        transform: rotateY(-50%);
+        left: 50%;
+        transform: rotateX(-50%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <p>header</p>
+      </header>
+
+      <nav>
+        <p>nav</p>
+      </nav>
+
+      <div class="content">
+        <div class="content-left">
+          <section>
+            <p>section</p>
+          </section>
+          <article>
+            <p>article</p>
+          </article>
+        </div>
+
+        <div class="content-right">
+          <aside>
+            <p>aside</p>
+          </aside>
+        </div>
+      </div>
+
+      <footer>
+        <p>footer</p>
+      </footer>
+    </div>
+  </body>
+</html>
