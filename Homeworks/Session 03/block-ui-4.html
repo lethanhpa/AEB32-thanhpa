@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: flex;
+            height: 1000px;
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .div__img {
+            margin-top: 25px;
+            height: auto;
+            width: 80%;
+        }
+        .div__icon {
+            margin-left: 10%;
+        }
+        hr {
+            width: 80%;
+            height: 0.3px;
+            border-width: 0;
+            color: rgb(220, 220, 220);
+            background-color:rgb(220, 220, 220);
+        }
+        .content {
+            box-shadow: 5px 5px 5px rgb(220, 220, 220);
+            width: 20%;
+            height: 85%;
+            margin: 2%;
+            border-top: 0.5px solid rgb(220, 220, 220);
+            border-left: 0.5px solid rgb(220, 220, 220);
+        }
+        .title {
+            text-align: center;
+            margin: 3%;
+            line-height: 1.5;
+        }
+        .parrent {
+            margin-top: 30px;
+            margin-bottom: 15px;
+            display: flex;
+        }
+        .percent {
+            display: flex;
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+        .div__name {
+            color: rgb(107, 107, 107);
+            margin-top: 10px;
+            font-size: 20px;
+        }
+        .div__country {
+            color: rgb(167, 167, 167);
+            margin-top: 10px;
+        }
+        .div__left{
+            color: rgb(107, 107, 107);
+            margin-left: 5%;
+        }
+        .div__right {
+            color: rgb(167, 167, 167);
+        }
+        .div__email, .div__phone {
+            box-shadow: 5px 5px 5px rgb(220, 220, 220);
+            height: 100px;
+            width: auto;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: 500;
+            color: white;
+            margin: 20px;
+        }
+        .div__email__ronaldo .div__email {
+            background-color: rgb(255, 66, 66);
+        }
+        .div__phone__ronaldo .div__phone {
+            background-color: rgb(9, 171, 0);
+        }
+        .div__email__messi .div__email {
+            background-color: rgb(0, 196, 210);
+        }
+        .div__phone__messi .div__phone {
+            background-color: rgb(78, 92, 255);
+        }
+        .div__email__neymar .div__email {
+            background-color: rgb(255, 128, 0);
+        }
+        .div__phone__neymar .div__phone {
+            background-color: rgb(216, 220, 0);
+        }
+        .div__email__mbappe .div__email {
+            background-color: rgb(195, 44, 255);
+        }
+        .div__phone__mbappe .div__phone {
+            background-color: rgb(255, 78, 255);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Ronaldo -->
+        <div class="content">
+            <div class="title">
+                <img class="div__img" src="image/ronaldo.jpg" alt="ronaldo">
+                <div class="div__name">Cristiano Ronaldo</div>
+                <div class="div__country">Manchester United</div>
+            </div>
+            <div class="parrent">
+                <img class="div__icon" src="image/calendar.png" alt="calendar">
+                <div class="div__left">DOB</div>
+                <div style="margin-left: 30%;" class="div__right">05/02/1985</div>
+            </div>
+            <hr>
+            <div class="percent" style="display: flex;">
+                <img class="div__icon" src="image/heart.png" alt="heart">
+                <div class="div__left">BG</div>
+                <div style="margin-left: 47%;" class="div__right">A+</div>
+            </div>
+            <hr>
+            <div class="percent" style="display: flex;">
+                <img class="div__icon" src="image/graduation-cap.png" alt="graduation cap">
+                <div class="div__left">EDU</div>
+                <div style="margin-left: 40%;" class="div__right">MCA</div>
+            </div>
+            <hr>
+            <div class="percent" style="display: flex;">
+                <img class="div__icon" src="image/location.png" alt="location">
+                <div class="div__left">RES</div>
+                <div style="margin-left: 37%;" class="div__right">Portugal</div>
+            </div>
+            <hr>
+            <div class="div__email__ronaldo">
+                <div class="div__email"> <br>
+                    <div style="margin-left: 20px;">EMAIL ID</div>
+                    <div style="display: flex; margin-left: 20px; margin-top: 15px;">
+                        <img src="image/message.png" alt="message">
+                        <div style="margin-left: 15px;">ronaldo85@gmail.com</div>
+                    </div>
+                </div>
+            </div>
+            <div class="div__phone__ronaldo">
+                <div class="div__phone"> <br>
+                    <div style="margin-left: 20px;">PHONE NO</div>
+                    <div style="display: flex; margin-left: 20px; margin-top: 15px;">
+                        <img src="image/call.png" alt="phone">
+                        <div style="margin-left: 15px;">8665543219</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Messi -->
+        <div class="content">
+            <div class="title">
+                <img class="div__img" src="image/messi.jpg" alt="messi">
+                <div class="div__name">Lionel Messi</div>
+                <div class="div__country">Paris Saint-Germain</div>
+            </div>
+            <div class="parrent">
+                <img class="div__icon" src="image/calendar.png" alt="calendar">
+                <div class="div__left">DOB</div>
+                <div style="margin-left: 30%;" class="div__right">24/06/1987</div>
+            </div>
+            <hr>
+            <div class="percent" style="display: flex;">
+                <img class="div__icon" src="image/heart.png" alt="heart">
+                <div class="div__left">BG</div>
+                <div style="margin-left: 47%;" class="div__right">A+</div>
+            </div>
+            <hr>
+            <div class="percent" style="display: flex;">
+                <img class="div__icon" src="image/graduation-cap.png" alt="graduation cap">
+                <div class="div__left">EDU</div>
+                <div style="margin-left: 40%;" class="div__right">MCA</div>
+            </div>
+            <hr>
+            <div class="percent" style="display: flex;">
+                <img class="div__icon" src="image/location.png" alt="location">
+                <div class="div__left">RES</div>
+                <div style="margin-left: 35%;" class="div__right">Argentina</div>
+            </div>
+            <hr>
+            <div class="div__email__messi">
+                <div class="div__email"> <br>
+                    <div style="margin-left: 20px;">EMAIL ID</div>
+                    <div style="display: flex; margin-left: 20px; margin-top: 15px;">
+                        <img src="image/message.png" alt="message">
+                        <div style="margin-left: 15px;">messi87@gmail.com</div>
+                    </div>
+                </div>
+            </div>
+            <div class="div__phone__messi">
+                <div class="div__phone"> <br>
+                    <div style="margin-left: 20px;">PHONE NO</div>
+                    <div style="display: flex; margin-left: 20px; margin-top: 15px;">
+                        <img src="image/call.png" alt="phone">
+                        <div style="margin-left: 15px;">8225543219</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Neymar JR -->
+        <div class="content">
+            <div class="title">
+                <img class="div__img" src="image/naymar.jpg" alt="Neymar">
+                <div class="div__name">Neymar JR</div>
+                <div class="div__country">Paris Saint-Germain</div>
+            </div>
+            <div class="parrent">
+                <img class="div__icon" src="image/calendar.png" alt="calendar">
+                <div class="div__left">DOB</div>
+                <div style="margin-left: 30%;" class="div__right">05/02/1992</div>
+            </div>
+            <hr>
+            <div class="percent" style="display: flex;">
+                <img class="div__icon" src="image/heart.png" alt="heart">
+                <div class="div__left">BG</div>
+                <div style="margin-left: 47%;" class="div__right">A+</div>
+            </div>
+            <hr>
+            <div class="percent" style="display: flex;">
+                <img class="div__icon" src="image/graduation-cap.png" alt="graduation cap">
+                <div class="div__left">EDU</div>
+                <div style="margin-left: 40%;" class="div__right">MCA</div>
+            </div>
+            <hr>
+            <div class="percent" style="display: flex;">
+                <img class="div__icon" src="image/location.png" alt="location">
+                <div class="div__left">RES</div>
+                <div style="margin-left: 40%;" class="div__right">Brasil</div>
+            </div>
+            <hr>
+            <div class="div__email__neymar">
+                <div class="div__email"> <br>
+                    <div style="margin-left: 20px;">EMAIL ID</div>
+                    <div style="display: flex; margin-left: 20px; margin-top: 15px;">
+                        <img src="image/message.png" alt="message">
+                        <div style="margin-left: 15px;">neymar92@gmail.com</div>
+                    </div>
+                </div>
+            </div>
+            <div class="div__phone__neymar">
+                <div class="div__phone"> <br>
+                    <div style="margin-left: 20px;">PHONE NO</div>
+                    <div style="display: flex; margin-left: 20px; margin-top: 15px;">
+                        <img src="image/call.png" alt="phone">
+                        <div style="margin-left: 15px;">8225543929</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mbappe -->
+        <div class="content">
+            <div class="title">
+                <img class="div__img" src="image/mbappe.jpg" alt="ronaldo">
+                <div class="div__name">Kylian Mbappé</div>
+                <div class="div__country">Paris Saint-Germain</div>
+            </div>
+            <div class="parrent">
+                <img class="div__icon" src="image/calendar.png" alt="calendar">
+                <div class="div__left">DOB</div>
+                <div style="margin-left: 30%;" class="div__right">20/12/1998</div>
+            </div>
+            <hr>
+            <div class="percent" style="display: flex;">
+                <img class="div__icon" src="image/heart.png" alt="heart">
+                <div class="div__left">BG</div>
+                <div style="margin-left: 47%;" class="div__right">A+</div>
+            </div>
+            <hr>
+            <div class="percent" style="display: flex;">
+                <img class="div__icon" src="image/graduation-cap.png" alt="graduation cap">
+                <div class="div__left">EDU</div>
+                <div style="margin-left: 40%;" class="div__right">MCA</div>
+            </div>
+            <hr>
+            <div class="percent" style="display: flex;">
+                <img class="div__icon" src="image/location.png" alt="location">
+                <div class="div__left">RES</div>
+                <div style="margin-left: 40%;" class="div__right">France</div>
+            </div>
+            <hr>
+            <div class="div__email__mbappe">
+                <div class="div__email"> <br>
+                    <div style="margin-left: 20px;">EMAIL ID</div>
+                    <div style="display: flex; margin-left: 20px; margin-top: 15px;">
+                        <img src="image/message.png" alt="message"> 
+                        <div style="margin-left: 15px;">mbappe98@gmail.com</div>
+                    </div>
+                </div>
+            </div>
+            <div class="div__phone__mbappe">
+                <div class="div__phone"> <br>
+                    <div style="margin-left: 20px;">PHONE NO</div>
+                    <div style="display: flex; margin-left: 20px; margin-top: 15px;">
+                        <img src="image/call.png" alt="phone">
+                        <div style="margin-left: 15px;">9937924265</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
