@@ -1,0 +1,13 @@
+.bg-ccc {
+    background-color: rgb(225, 225, 225);
+  }
+.div__table {
+    text-align: center;
+    margin: auto;
+}
+.table {
+    width: 100%;
+}
+td {
+    border: 1px solid black;
+}

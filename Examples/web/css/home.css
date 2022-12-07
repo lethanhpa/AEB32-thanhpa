@@ -1,0 +1,8 @@
+.bg-ccc {
+    background-color: rgb(225, 225, 225);
+  }
+  img {
+    height: 600px;
+    width: 400px;
+    object-fit: contain;
+}
