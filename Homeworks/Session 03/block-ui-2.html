@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        font-family: "Lucida Sans", Verdana, sans-serif;
+        line-height: 1.7;
+      }
+      .content {
+        height: 86%;
+        width: 40%;
+        border: 0.5px solid rgb(204, 204, 204);
+      }
+      .div__img {
+        position: absolute;
+        top: 20%;
+        left: 3%;
+        border-radius: 50%;
+        height: auto;
+        width: 10%;
+      }
+      hr {
+        height: 0.3px;
+        border-width: 0;
+        color: rgb(220, 220, 220);
+        background-color: rgb(220, 220, 220);
+      }
+      h2 {
+        position: absolute;
+        top: 25%;
+        left: 13.5%;
+        color: white;
+      }
+      h3 {
+        position: absolute;
+        top: 29%;
+        left: 13.5%;
+        color: white;
+      }
+      .div__follower,
+      .div__followings,
+      .div__messages,
+      .div__likes,
+      .div__comments {
+        display: flex;
+        margin: 20px;
+        color: gray;
+      }
+      .div__right__follower,
+      .div__right__followings,
+      .div__right__messages,
+      .div__right__likes,
+      .div__right__comments {
+        border-radius: 5px;
+        position: absolute;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        right: 63%;
+        color: white;        
+        font-weight: 600;
+        height: 3.5%;
+        width: 4%;
+        text-align: center;
+      }
+      .div__right__follower {
+        background-color: rgb(255, 73, 73);
+      }
+      .div__right__followings {
+        background-color: rgb(73, 222, 255);
+      }
+      .div__right__messages {
+        background-color: rgb(0, 255, 26);
+      }
+      .div__right__likes {
+        background-color: rgb(255, 243, 73);
+      }
+      .div__right__comments {
+        background-color: rgb(255, 73, 249);
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <div class="content">
+        <div>
+          <img
+            style="height: auto; width: 100%"
+            src="./image/neymar-2.jpg"
+            alt="neymar"
+          />
+          <img class="div__img" src="./image/naymar.jpg" alt="neymar" />
+          <h2>Neymar JR</h2>
+          <h3>Brasil</h3>
+        </div>
+        <div class="div__follower">
+          <div>FOLLOWERS</div>
+          <div class="div__right__follower">1,200</div>
+        </div>
+        <hr />
+
+        <div class="div__followings">
+          <div>FOLLOWINGS</div>
+          <div class="div__right__followings">1,200</div>
+        </div>
+        <hr />
+
+        <div class="div__messages">
+          <div>MESSAGE</div>
+          <div class="div__right__messages">1,200</div>
+        </div>
+        <hr />
+
+        <div class="div__likes">
+          <div>LIKES</div>
+          <div class="div__right__likes">1,200</div>
+        </div>
+        <hr />
+        <div class="div__comments">
+          <div>COMMENT</div>
+          <div class="div__right__comments">1,200</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

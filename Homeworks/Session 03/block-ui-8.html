@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        height: 600px;
+        font-family: "Lucida Sans", Verdana, sans-serif;
+        font-weight: 500;
+        color: rgb(135, 135, 135);
+      }
+      .content {
+        height: 85%;
+        width: 70%;
+        box-shadow: 5px 5px 5px rgb(220, 220, 220);
+        border-top: 0.5px solid rgb(220, 220, 220);
+        border-left: 0.5px solid rgb(220, 220, 220);
+        margin-top: 10%;
+        margin-left: 15%;
+      }
+      .div__left {
+        display: flex;
+        margin: 5%;
+        align-items: center;
+      }
+      .div__html__left, .div__css__left, .div__php__left, .div__java__left, .div__net__left {
+        height: 40px;
+        width: 40px;
+        border-radius: 7%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .div__html__left {
+        background-color: rgb(0, 213, 0);
+      }
+      .div__css__left {
+        background-color: rgb(255, 50, 50);
+      }
+      .div__php__left {
+        background-color: rgb(0, 207, 207);
+      }
+      .div__java__left {
+            background-color: rgb(212, 212, 0);
+      }
+      .div__net__left {
+        background-color: rgb(170, 0, 170);
+      }
+      .div__right {
+        background-color: rgb(241, 241, 241);
+        display: flex;
+        flex: 1;
+        margin-left: 10%;
+      }
+      .div__html__right, .div__css__right, .div__php__right, .div__java__right, .div__net__right {
+        height: 15px;
+      }
+      .div__html__right {
+        flex: 0.6;
+        background-color: rgb(0, 203, 14);
+      }
+      .div__css__right {
+        flex: 0.5;
+        background-color: rgb(255, 50, 50);
+      }
+      .div__php__right {
+        flex: 0.3;
+        background-color: rgb(0, 207, 207);
+      }
+      .div__java__right {
+        flex: 0.75;
+        background-color: rgb(212, 212, 0);
+      }
+      .div__net__right {
+        flex: 0.4;
+        background-color: rgb(170, 0, 170);
+      }
+      .text {
+        width: 5%;
+        margin-left: 2%
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="content">
+        <div class="div__left">
+          <div class="div__html__left">
+            <img
+              style="height: 60%; width: auto"
+              src="./image/android.png"
+              alt="html"
+            />
+          </div>
+          <div class="text">HTML</div>
+          <div class="div__right">
+            <div class="div__html__right"></div>
+          </div>
+        </div>
+
+        <div class="div__left">
+            <div class="div__css__left">
+              <img
+                style="height: 60%; width: auto"
+                src="./image/apple.png"
+                alt="css"
+              />
+            </div>
+            <div class="text">CSS</div>
+            <div class="div__right">
+              <div class="div__css__right"></div>
+            </div>
+          </div>
+
+          <div class="div__left">
+            <div class="div__php__left">
+              <img
+                style="height: 60%; width: auto"
+                src="./image/openbox.png"
+                alt="css"
+              />
+            </div>
+            <div class="text">PHP</div>
+            <div class="div__right">
+              <div class="div__php__right"></div>
+            </div>
+          </div>
+
+          <div class="div__left">
+            <div class="div__java__left">
+              <img
+                style="height: 60%; width: auto"
+                src="./image/basketball.png"
+                alt="css"
+              />
+            </div>
+            <div class="text">Java</div>
+            <div class="div__right">
+              <div class="div__java__right"></div>
+            </div>
+          </div>
+
+          <div class="div__left">
+            <div class="div__net__left">
+              <img
+                style="height: 60%; width: auto"
+                src="./image/drupal.png"
+                alt="css"
+              />
+            </div>
+            <div class="text">.Net</div>
+            <div class="div__right">
+              <div class="div__net__right"></div>
+            </div>
+          </div>
+      </div>
+    </div>
+  </body>
+</html>
