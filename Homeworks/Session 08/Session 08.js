@@ -17,18 +17,10 @@
 // }
 // bt1();
 
-// function bt2(params) {
-//     let arr = new Array(prompt("Nhap:"));
-
-//     for (let i = 0; i < arr.length; i++) {
-//     // Vòng lặp thứ hai áp dụng cho mảng bên trong
-//     for (let j = 0; j < arr[i].length; j++) {
-//         // Truy xuất các phần tử của từng mảng con
-//         console.log(arr[i][j]);
-//     }
-// }
-// }
-// bt2()
+function bt2(params) {
+    
+}
+bt2()
 
 // function bt3(params) {
 //   let array = [91, 451, 43, 3, 452, 54];
