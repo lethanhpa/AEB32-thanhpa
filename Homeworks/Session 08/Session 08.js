@@ -50,10 +50,10 @@ bt3();
 function bt4(params) {
   let n = prompt("Nhap:");
   let sum = 0;
-  for (let i = 0; i = n; i++) {
+  for (let i = 0; (i = n); i++) {
     sum += n % 10;
     n = Math.floor(n / 10);
   }
   console.log("Tong cac chu so la: " + sum);
 }
-bt4()
+bt4();
