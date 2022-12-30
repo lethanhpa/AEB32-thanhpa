@@ -62,5 +62,5 @@ function deleteUser(userId) {
 
 function handleEdit(userId) {
   console.log("handleEdit", userId);
-  window.location.href = `./edit.html?id=${userId}`;
+  window.location.href = `./form.html?id=${userId}`;
 }

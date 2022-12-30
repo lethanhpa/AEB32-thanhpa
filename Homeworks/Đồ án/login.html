@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Log in</title>
+    <link
+      rel="stylesheet"
+      href="../bootstrap-5.2.3-dist/bootstrap-5.2.3-dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <div id="moda">
+      <form>
+        <div class="modal-body">
+          <h1 class="modal-header">LOG IN</h1>
+          <div>
+            <label for="inputUserName" class="modal-label">Username</label>
+            <input
+              type="text"
+              id="inputUserName"
+              aria-describedby="userNameHelp"
+              placeholder="Enter Username..."
+              required
+              class="modal-input"
+            />
+          </div>
+          <div>
+            <label for="inputPassword" class="modal-label">Password</label>
+            <input type="password" class="modal-input" id="inputPassword" />
+          </div>
+          <div class="mb-3 form-check">
+            <input
+              type="checkbox"
+              class="form-check-input"
+              id="exampleCheck1"
+            />
+            <label class="form-check-label" for="exampleCheck1"
+              >Check me out</label
+            >
+          </div>
+          <button
+            id="buy-tickets"
+            type="submit"
+            onclick="handleSubmmit()"
+            class="modal-input"
+          >
+            Login
+          </button>
+        </div>
+      </form>
+    </div>
+    <script>
+      function handleSubmmit() {
+        let valueUserName = document.getElementById("inputUserName")?.value;
+        let valuePassword = document.getElementById("inputPassword")?.value;
+        if (
+          valueUserName?.toLowerCase() === "lethanhpa" &&
+          valuePassword?.toLowerCase() === "lethanhpa"
+        ) {
+          alert(
+            window.location.assign("./home.html?isLogin=true") ||
+              "Login Success!!!"
+          );
+          localStorage.setItem("islogin", true);
+        } else {
+          alert("Login Fail!!!");
+        }
+      }
+    </script>
+    <script src="../bootstrap-5.2.3-dist/bootstrap-5.2.3-dist/js/bootstrap.min.js"></script>
+    <script src="../bootstrap-5.2.3-dist/umd/popper.min.js"></script>
+    <script src="./js/form.js"></script>
+  </body>
+</html>

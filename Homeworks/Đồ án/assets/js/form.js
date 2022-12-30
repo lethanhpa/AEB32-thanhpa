@@ -76,3 +76,45 @@ function updateUser(user) {
       console.error("Error:", error);
     });
 }
+
+window.onload = function () {
+  loadHeader();
+};
+
+function loadHeader() {
+  let elm = document.querySelector("header");
+  if (elm) {
+    fetch("./header.html", {
+      method: "GET",
+    })
+      .then((response) => response.text())
+      .then((data) => {
+        elm.innerHTML = data;
+        handleShowBtn();
+        // console.log(data);
+      })
+      .catch((error) => {
+        console.error("Error:", error);
+      });
+  }
+}
+
+function handleShowBtn() {
+  // let urlDetail = new URLSearchParams(window.location.search);
+  let isLogin = localStorage.getItem("islogin");
+
+  let btnLogin = document.getElementById("btnLogin");
+  let btnLogout = document.getElementById("btnLogout");
+
+  if (isLogin) {
+    btnLogin.style.display = "none";
+    btnLogout.style.display = "block";
+  } else {
+    btnLogout?.classList.add("d-none");
+    btnLogin?.classList.remove("d-none");
+  }
+}
+
+function gotoForm() {
+  window.location.href = "./login.html";
+}
