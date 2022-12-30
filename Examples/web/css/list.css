@@ -1,16 +1,19 @@
 .div__table {
-    text-align: center;
-    margin: auto;
-  }
-  th,
-  td {
-    height: 50px;
-  }
-  table{
-    border: 1px solid black;
-    border-collapse: collapse;
-    overflow: hidden;
-  }
-  tr:nth-child(even) {
-    background-color: #d6eeee;
-  }
+  text-align: center;
+  margin: auto;
+}
+
+th,
+td {
+  height: 50px;
+}
+
+table {
+  border: 1px solid black;
+  border-collapse: collapse;
+  overflow: hidden;
+}
+
+tr:nth-child(even) {
+  background-color: #d6eeee;
+}
