@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Buy Tickets</title>
+    <link
+      rel="icon"
+      href="./assets/css/image/bigbang_logo.jpg"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <div class="modal">
+      <div class="modal-main">
+        <header class="modal-header">Tickets</header>
+        <form action="">
+          <div class="modal-body">
+            <label class="modal-label"> Tickets, $15 per person </label>
+            <input
+              type="text"
+              class="modal-input"
+              name="number"
+              required
+              placeholder="How many?"
+            />
+            <label for="ticket-email" class="modal-label"> Send to </label>
+            <input
+              type="text"
+              name="username"
+              placeholder="Enter username..."
+              required
+              class="modal-input"
+            />
+            <label for="ticket-email" class="modal-label"> Password </label>
+            <input
+              type="password"
+              name="password"
+              class="modal-input"
+              required
+            />
+            <input
+              id="buy-tickets"
+              class="modal-input"
+              type="submit"
+              value="PAY"
+            />
+          </div>
+        </form>
+        <footer class="modal-footer">
+          <a class="help" href="./home.html"><i>Need help?</i></a>
+        </footer>
+        <script>
+          let usernameInput = document.querySelector('input[name="username"]');
+          let numberInput = document.querySelector('input[name="number"]');
+          let passwordInput = document.querySelector('input[name="password"]');
+          let button = document.getElementById("buy-tickets");
+          button.onclick = function () {
+            if (
+              usernameInput.value === "" ||
+              passwordInput.value === "" ||
+              numberInput.value === ""
+            ) {
+              alert("Enter complete information.");
+            } else {
+              alert(
+                location.assign("./home.html") || "Successful ticket purchase!"
+              );
+            }
+          };
+        </script>
+      </div>
+    </div>
+  </body>
+</html>

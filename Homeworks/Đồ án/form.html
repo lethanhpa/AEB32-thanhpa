@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BIGBANG</title>
+    <link
+      rel="icon"
+      href="./assets/css/image/bigbang_logo.jpg"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="../bootstrap-5.2.3-dist/bootstrap-5.2.3-dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css">
+  </head>
+  <body>
+    <header class="bg-ccc p-3">
+      <iframe
+        src="./header.html"
+        frameborder="0"
+        class="h__55px w-100 rounded-3"
+      ></iframe>
+    </header>
+    <form class="row g-3 w-50 m-auto my-3" onsubmit="return false">
+      <div class="col-md-6">
+        <label for="inputName" class="form-label">Name</label>
+        <input type="text" class="form-control" id="inputName" />
+      </div>
+      <div class="col-md-6">
+        <label for="inputCity" class="form-label">City</label>
+        <input type="text" class="form-control" id="inputCity" />
+      </div>
+      <div class="col-12">
+        <label for="inputAddress" class="form-label">Avatar</label>
+        <input
+          type="text"
+          class="form-control"
+          id="inputAvatar"
+          placeholder="https://xxxxxx"
+        />
+      </div>
+      <div class="col-md-6">
+        <label for="inputBirthday" class="form-label">Birthday</label>
+        <input
+          type="text"
+          class="form-control"
+          id="inputBirthday"
+          placeholder="dd/mm/yyyy"
+        />
+      </div>
+      </div>
+      <button class="btn btn-success" onclick="handleSubmit()">Submit</button>
+    </form>
+    <!-- config js bt -->
+    <script src="../bootstrap-5.2.3-dist/bootstrap-5.2.3-dist/js/bootstrap.min.js"></script>
+    <script src="../bootstrap-5.2.3-dist/umd/popper.min.js"></script>
+    <script src="./assets/js/form.js"></script>
+  </body>
+</html>

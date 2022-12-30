@@ -1,0 +1,58 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#modal {
+    padding-top: 10%;
+    padding-left: 30%;
+}
+.modal-header {
+    height: 80px;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.modal-body {
+    padding: 16px;
+    width: 60%;
+    height: auto;
+    border: 1px solid rgb(178, 178, 178);
+}
+
+.modal-label {
+    margin-bottom: 12px;
+    font-size: 15px;
+}
+
+.modal-input {
+    padding: 10px;
+    width: 100%;
+    border: 1px solid #ccc;
+    font-size: 15px;
+    margin-bottom: 24px;
+}
+
+#buy-tickets:hover {
+    opacity: 0.9;
+}
+
+#buy-tickets {
+    background-color: #009688;
+    color: #fff;
+    width: 100%;
+    font-size: 20px;
+    padding: 18px;
+}
+
+img {
+    width: 50%;
+    height: auto;
+}
+
+.flex__05 {
+    flex: 0.5;
+}
