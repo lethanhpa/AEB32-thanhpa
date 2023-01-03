@@ -261,7 +261,7 @@ html {
     padding-left: 20%;
 }
 
-.modal-main {
+.modal-main, .body-login {
     width: 80%;
     border-top: 1px solid rgb(220, 220, 220);
     border-left: 1px solid rgb(220, 220, 220);
@@ -324,4 +324,10 @@ html {
     padding: 18px;
     cursor: pointer;
     text-decoration: none; 
+}
+
+.modal-login {
+    padding-top: 8%;
+    padding-left: 30%;
+    width: 80%;
 }

@@ -12,11 +12,12 @@
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
   <body>
-    <div id="moda">
+    <div class="login">
       <form>
-        <div class="modal-body">
-          <h1 class="modal-header">LOG IN</h1>
-          <div>
+        <div class="modal-login">
+          <div class="body-login">
+            <h1 class="text-center py-3">LOG IN</h1>
+          <div class="px-3">
             <label for="inputUserName" class="modal-label">Username</label>
             <input
               type="text"
@@ -27,28 +28,30 @@
               class="modal-input"
             />
           </div>
-          <div>
+          <div class="px-3">
             <label for="inputPassword" class="modal-label">Password</label>
             <input type="password" class="modal-input" id="inputPassword" />
           </div>
-          <div class="mb-3 form-check">
-            <input
-              type="checkbox"
-              class="form-check-input"
-              id="exampleCheck1"
-            />
-            <label class="form-check-label" for="exampleCheck1"
-              >Check me out</label
+          <div class="px-3">
+            <div class="mb-3 form-check">
+              <input
+                type="checkbox"
+                class="form-check-input"
+                id="exampleCheck1"
+              />
+              <label class="form-check-label" for="exampleCheck1"
+                >Check me out</label
+              >
+            </div>
+            <button
+              type="submit"
+              onclick="handleSubmmit()"
+              class="modal-input bg-info text-white"
             >
+              Login
+            </button>
           </div>
-          <button
-            id="buy-tickets"
-            type="submit"
-            onclick="handleSubmmit()"
-            class="modal-input"
-          >
-            Login
-          </button>
+          </div>
         </div>
       </form>
     </div>
